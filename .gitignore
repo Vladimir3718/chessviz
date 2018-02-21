@@ -1,0 +1,6 @@
+#ignore .o
+*.o
+*main
+#ignore text
+*.txt
+*.md
