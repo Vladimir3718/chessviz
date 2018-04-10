@@ -2,7 +2,4 @@
 *.o
 *main
 #ignore text
-*.txt
 *.md
-
-*.jpeg
