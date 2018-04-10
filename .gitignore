@@ -1,8 +1,5 @@
 #ignore .o
-*.o
-*main
+build/*.o
+bin/*main
 #ignore text
-*.txt
 *.md
-
-*.jpeg
