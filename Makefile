@@ -4,11 +4,11 @@ CC=gcc
 CFLAGS=-Wall -Werror -c
 
 #Путь к src
-SRC=../src/
+SRC=src/
 #Путь к build
-BUILD=../build/
+BUILD=build/
 #Путь к bin
-BIN=../bin/
+BIN=bin/
 #Перечень объектных фаилов
 objects=$(BUILD)main.o $(BUILD)board.o $(BUILD)board_read.o $(BUILD)board_print_plain.o
 #Исходники
