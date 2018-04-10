@@ -1,1 +1,1 @@
-# chessviz
+[![Build Status](https://travis-ci.org/Vladimir3718/chessviz.svg?branch=master)](https://travis-ci.org/Vladimir3718/chessviz)
