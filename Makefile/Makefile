@@ -33,5 +33,7 @@ $(BUILD)board_print_plain.o: $(SRC)board_print_plain.c $(SRC)board_print_plain.h
 $(BUILD)board.o: $(SRC)board.c $(SRC)board.h
 	$(CC) $(CFLAGS) $(SRC)board.c -o $@
 	
+install:
+	mkdir ../bin ../build
 clean:
-	-rm -rf ../build/*.o ../bin/main
+	-rm -rf ../build ../bin
