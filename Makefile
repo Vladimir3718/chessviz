@@ -18,7 +18,7 @@ EXE=$(BIN)main
 
 .PHONY: all clean
 
-all: bin build $(BIN)main
+all: bin build $(EXE)
 
 $(EXE): $(objects)
 	$(CC) $(objects) -o $@
