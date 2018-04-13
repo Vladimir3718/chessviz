@@ -16,6 +16,8 @@ sources=$(SRC)main.c $(SRC)board.c $(SRC)board_read.c $(SRC)board_print_plain.c
 #Исполняемый фаил
 EXE=$(BIN)main
 
+.PHONY: all clean
+
 all: bin build $(BIN)main
 
 $(EXE): $(objects)
