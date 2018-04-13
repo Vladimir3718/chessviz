@@ -16,7 +16,7 @@ sources=$(SRC)main.c $(SRC)board.c $(SRC)board_read.c $(SRC)board_print_plain.c
 #Исполняемый фаил
 EXE=$(BIN)main
 
-all: ../bin ../build $(BIN)main
+all: bin build $(BIN)main
 
 $(EXE): $(objects)
 	$(CC) $(objects) -o $@
@@ -33,7 +33,9 @@ $(BUILD)board_print_plain.o: $(SRC)board_print_plain.c $(SRC)board_print_plain.h
 $(BUILD)board.o: $(SRC)board.c $(SRC)board.h
 	$(CC) $(CFLAGS) $(SRC)board.c -o $@
 	
-install:
-	mkdir ../bin ../build
+bin:
+	mkdir bin
+build:
+	mkdir build
 clean:
-	-rm -rf ../build ../bin
+	-rm -rf build bin
