@@ -16,4 +16,5 @@ bprint(a);
 printf("\nПродолжить игру? 1/0\n");
 scanf("%d",&y);
 }while(y);
+return 0;
 }
