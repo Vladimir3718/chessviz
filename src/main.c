@@ -9,6 +9,7 @@ char  a[9][9];
 int y=1;
 bbuild(a);
 bprint(a);
+
 do{
 printf("\nВаш ход?\n");
 step(a);
@@ -16,5 +17,6 @@ bprint(a);
 printf("\nПродолжить игру? 1/0\n");
 scanf("%d",&y);
 }while(y);
+
 return 0;
 }

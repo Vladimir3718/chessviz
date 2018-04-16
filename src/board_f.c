@@ -1,19 +1,19 @@
 #include <stdio.h>
 #include <string.h>
-#include "board.h"
 #include "board_f.h"
-void step ( char num[9][9]){
-char hod[6];
+void step_f ( char num[9][9], char hod[6]){
 int o=0,p=0,i=0,o1=0,p1=0;
 int flag=1,flag2=0,error=0;
 char temp;
 do{
 flag=1;
 flag2=0;
-error=0;
+if (error){
 scanf("%s",hod);
-if (strlen(hod)==5){
-for(i=0;i<5;i++){
+}
+error=0;
+if (strlen(hod)==6){
+for(i=1;i<6;i++){
 switch(hod[i])
     {
     case 'a':
@@ -84,21 +84,20 @@ switch(hod[i])
 	o=7;}else {o1=7;}
 	break;
     case 'x':
-    flag=0;
-    flag2=1;
+     flag=0;
+     flag2=1;
 	break;
     default:
       error=1;
       break;
     }
 }
-
 if (error){
 printf("\nВы ввели некоректные данные!\n");
 printf("повторите ввод хода\n");
+continue;
 }
-
-if (num [o][p] == 'P' || num [o][p] == 'p'){
+if (num[o][p] == hod[0] || num[o][p] == hod[o] + ('a'- 'A')){
 
     if (flag==0 && num[o1][p1] != ' ' && flag2!=1){
 	printf("\nВы делаете тихий ход, а не производите взятие фигуры!\n");
@@ -120,15 +119,10 @@ if (num [o][p] == 'P' || num [o][p] == 'p'){
 
     printf("\n");
 }else { 
-	printf("\nТы схватил не пешку!\n");
+	printf("\nТы схватил не ту фигуру!\n");
 	printf("повторите ввод хода\n");
 	error=1;}
-	
-}else { 
-    if (strlen(hod)>5 && strlen(hod)<7) {
-	step_f(num,hod);} else {
-	printf("\nНекоректные значения, повторите ввод\n\n");
-	error=1;}
-    }
+
+}
 }while (error);
 }
