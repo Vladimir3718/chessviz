@@ -1,5 +1,6 @@
 #ignore .o
 build/*.o
+buildt/*.o
 bin/*main
 #ignore text
 *.md

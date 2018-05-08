@@ -6,16 +6,21 @@
 int main()
 {
 char  a[9][9];
+char hod[6];
 int y=1;
 bbuild(a);
 bprint(a);
-
+system("clear");
 do{
+bprint(a);
 printf("\nВаш ход?\n");
-step(a);
+scanf("%s",hod);
+step(a,hod);
+system("clear");
 bprint(a);
 printf("\nПродолжить игру? 1/0\n");
 scanf("%d",&y);
+system("clear");
 }while(y);
 
 return 0;

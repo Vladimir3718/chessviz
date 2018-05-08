@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include "board_f.h"
-void step_f ( char num[9][9], char hod[6]){
+int step_f ( char num[9][9], char hod[6]){
 int o=0,p=0,i=0,o1=0,p1=0;
 int flag=1,flag2=0,error=0;
 char temp;
@@ -125,4 +125,5 @@ if (num[o][p] == hod[0] || num[o][p] == hod[o] + ('a'- 'A')){
 
 }
 }while (error);
+return 0;
 }
