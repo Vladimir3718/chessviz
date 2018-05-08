@@ -91,7 +91,7 @@ switch(hod[i])
     }
 }
 
-if (error){
+if (error){return 0;
 printf("\nВы ввели некоректные данные!\n");
 printf("повторите ввод хода\n");
 }
