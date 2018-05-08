@@ -8,9 +8,6 @@ char temp;
 do{
 flag=1;
 flag2=0;
-if (error){
-scanf("%s",hod);
-}
 error=0;
 if (strlen(hod)==6){
 for(i=1;i<6;i++){

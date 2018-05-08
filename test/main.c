@@ -85,7 +85,7 @@ CTEST (Queen_d1xd7, InCorrect_Queen_h)
     ASSERT_EQUAL(expected, result);
 }
 
-CTEST (B_c3_e5, InCorrect_Bishop_h)
+CTEST (Bishop_c3_e5, InCorrect_Bishop_h)
 {
     char a[9][9];
     char hod[6];
@@ -96,6 +96,7 @@ CTEST (B_c3_e5, InCorrect_Bishop_h)
     hod[4]='e';
     hod[5]='5';
     bbuild(a);
+    a[5][3]='B';
     int result=step(a,hod);
     int expected=0;
     ASSERT_EQUAL(expected, result);
