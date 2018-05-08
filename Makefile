@@ -67,4 +67,4 @@ build:
 buildt:
 	mkdir buildt
 clean:
-	-rm -rf build bin
+	-rm -rf build bin buildt

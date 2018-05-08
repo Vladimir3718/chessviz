@@ -91,8 +91,6 @@ switch(hod[i])
     }
 }
 
-
-
 if (num [o][p] == 'P' || num [o][p] == 'p'){
 
     if (flag==0 && num[o1][p1] != ' ' && flag2!=1){
