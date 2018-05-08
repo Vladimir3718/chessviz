@@ -86,15 +86,12 @@ switch(hod[i])
     flag2=1;
 	break;
     default:
-      error=1;
+      return 0;
       break;
     }
 }
 
-if (error){return 0;
-printf("\nВы ввели некоректные данные!\n");
-printf("повторите ввод хода\n");
-}
+
 
 if (num [o][p] == 'P' || num [o][p] == 'p'){
 
