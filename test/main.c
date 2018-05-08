@@ -24,11 +24,11 @@ CTEST (Pawn_d2_d3, InCorrect_Pawn1_h)
 {
     char a[9][9];
     char hod[6];
-    hod[0]='d';
+    hod[0]='e';
     hod[1]='2';
     hod[2]='-';
-    hod[3]='d';
-    hod[4]='3';
+    hod[3]='e';
+    hod[4]='4';
     bbuild(a);
     int result=step(a,hod);
     int expected=0;
